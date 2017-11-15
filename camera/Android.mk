@@ -53,9 +53,11 @@ LOCAL_C_INCLUDES += \
     hardware/qcom/media/msm8960/libstagefrighthw \
     frameworks/native/include/media/hardware
 
-LOCAL_SHARED_LIBRARIES := libutils libui libcamera_client libcamera_metadata liblog libcutils libbinder
+LOCAL_SHARED_LIBRARIES := libutils libui libcamera_client libcamera_metadata liblog libcutils libbinder libnativewindow
 LOCAL_SHARED_LIBRARIES += libgenlock libmmcamera_interface2
 LOCAL_SHARED_LIBRARIES += android.hidl.token@1.0-utils android.hardware.graphics.bufferqueue@1.0
+
+LOCAL_HEADER_LIBRARIES  := libnativebase_headers
 
 ifneq ($(DLOPEN_LIBMMCAMERA),1)
     LOCAL_SHARED_LIBRARIES += liboemcamera
