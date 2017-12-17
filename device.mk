@@ -119,14 +119,14 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml
 
 # NFC packages
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     nfc_nci.bcm2079x.default \
     android.hardware.nfc@1.0-impl \
     NfcNci \
     Tag
 
 # NFC feature files + configuration
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     device/lge/mako/nfc/libnfc-brcm.conf:system/vendor/etc/libnfc-brcm.conf
