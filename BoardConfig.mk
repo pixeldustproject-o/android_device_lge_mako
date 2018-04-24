@@ -30,6 +30,9 @@ TARGET_KERNEL_SOURCE := kernel/qcom/msm8960
 TARGET_KERNEL_CONFIG := mako_defconfig
 BOARD_KERNEL_IMAGE_NAME := zImage
 
+#TARGET_USE_SDCLANG := true
+#DISABLE_DTC_OPTS := true
+
 TARGET_GCC_VERSION_ARM := 4.8
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
