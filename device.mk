@@ -24,6 +24,10 @@ DEVICE_PACKAGE_OVERLAYS := device/lge/mako/overlay
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_PACKAGES := \
+	Camera2 \
+	Gallery2
+
+PRODUCT_PACKAGES := \
     android.hardware.wifi@1.0-service \
     libwpa_client \
     hostapd \
